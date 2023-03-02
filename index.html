@@ -6,20 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Today!</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="flexWrapper" id="flexWrapper">
-        <div class="hero" id="hero">HeroFiller
-            <div class="titleOverlay" id="titleOverlay">TitleFiller</div>
-            HeroFilller
-        </div>
-        <div class="mainContent" id="mainContent">
-            <div class="topText" id="topText">TopFiller</div>
-            <div class="formHolder" id="formHolder">FormFiller</div>
-            <div class="bottomText" id="bottomText">BottomFiller</div>
-        </div>
+    <div class="hero" id="hero">HeroFiller
+        <div class="titleOverlay" id="titleOverlay">TitleFiller</div>
+        HeroFilller
     </div>
-    <footer class="footer" id="footer">FooterFiller</footer>
+    <div class="mainBlock">
+        <div class="topText" id="topText">TopFiller</div>
+        <div class="formHolder" id="formHolder">
+            <form class="form">
+                <h1>Sign Up Now!</h1>
+                <div class="inputWrapper">
+                    <div class="inputDiv">
+                        <label for="firstName" class="label" id="firstNameLabel">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                        <span></span>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="lastName" class="label" id="lastNameLabel">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                        <span></span>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="email" class="label" id="emailLabel">Email</label>
+                        <input type="email" id="emal" name="email">
+                        <span></span>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="tel" class="label" id="telLabel">Phone Number</label>
+                        <input type="tel" id="tel" name="tel">
+                        <span></span>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="password" class="label" id="passwordLabel">Password</label>
+                        <input type="password" id="password" name="password">
+                        <span></span>
+                    </div>
+                    <div class="inputDiv">
+                        <label for="passwordConfirm" class="label" id="passwordConfirm">Confirm Password</label>
+                        <input type="passsword" id="passwordConfirm" name="passwordConfirm">
+                        <span></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottomText" id="bottomText">BottomFiller</div>  
+        <footer class="footer" id="footer">FooterFiller</footer>
+    </div>
 </body>
 </html>

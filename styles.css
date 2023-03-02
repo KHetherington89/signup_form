@@ -1,22 +1,68 @@
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+:root{
+    --bottomTextHeight: 25vh;
+    --formHeight: 40vh;
+    --footerHeight: 10vh;
+    --topTextHeight: 25vh;
 }
 
-.flexWrapper{
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+
+/* Main block elements -------------------------------------------------------------*/
+
+body{
+    display: grid;
+    grid-template-columns: 35vw 65vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.bottomText{
+    background-color: aqua;
+}
+
+.mainBlock{
+    display: grid;
+    grid-template-rows: 22% 54% 22% 2%;
 }
 
 footer{
-    background-color: red;
-    margin-top: auto;
-    width: 100%;
+    background-color: rebeccapurple;
+}
+.formHolder{
+    background-color: bisque;
 }
 
-.mainContent{
-    display: flex;
-    flex-direction: column;
+.topText{
+    background-color: blue;
+} 
+
+
+/* Form Elements -------------------------------------------------------------------*/
+ 
+h1, .inputDiv{
+    white-space: nowrap;
+}
+
+.inputWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+form{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px 50px;
+}
+
+input, label {
+    box-sizing: border-box;
+    display: block;
+    padding: 5px;
+    width: 90%;
+  } 
+
+.inputDiv{
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 70px;
 }
