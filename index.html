@@ -19,7 +19,7 @@
         <div class="topText" id="topText">
             <p>If only this was a real travel site! I bet it would take
                 you somewhere amazing.<br>
-                Meh, what the heck, "sign up" anyway, because you never know and stranger things have happened.<br>
+                Meh, what the heck, "sign up" anyway, because you never know. Stranger things have happened.<br>
                 You KNOW you want to!
             </p>
         </div>
@@ -27,9 +27,11 @@
                 <div class="formStyleWrapper">
                     <h2>Sign Up Now!</h2>
                     <div class="inputDiv">
-                        <label for="firstName" class="label" id="firstNameLabel">First Name</label>
-                        <input class="textIn" type="text" id="firstName" name="firstName" required>
-                        <span></span>
+                        <span>
+                            <label for="firstName" class="label" id="firstNameLabel">First Name</label>
+                            <input class="textIn" type="text" id="firstName" name="firstName" required>
+                        </span>
+                        <!-- <span></span> -->
                     </div>
                     <div class="inputDiv">
                         <label for="lastName" class="label" id="lastNameLabel">Last Name</label>
@@ -57,8 +59,10 @@
                         <span></span>
                     </div>
                 </div>
-                <button class="submit" type="submit">Buttony McButtonface</button>
-                <p>Already got an account? <a href="index.html">Log In</a></p>
+                <div class="submitDiv" id="submitDiv">
+                    <button class="submit" type="submit">Create Account</button>
+                </div>
+                <p>Already have an account? <a href="index.html">Log In</a></p>
             </form>
         <div class="bottomText" id="bottomText"></div>  
         <footer class="footer" id="footer">Copyright © KHetherington89</footer>
