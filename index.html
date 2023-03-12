@@ -19,48 +19,66 @@
         <div class="topText" id="topText">
             <p>If only this was a real travel site! I bet it would take
                 you somewhere amazing.<br>
-                Meh, what the heck, "sign up" anyway, because you never know. Stranger things have happened.<br>
+                Meh, what the heck, "sign up" anyway, because you never know. 
+                Stranger things have happened.<br>
                 You KNOW you want to!
             </p>
         </div>
-            <form class="form">
+            <form class="form" id="form">
                 <div class="formStyleWrapper">
                     <h2>Sign Up Now!</h2>
+                    <div class="sideMessage" id="sideMessage"><p id="sideMessageText">Required fields are marked with an *</p></div>
                     <div class="inputDiv">
-                        <span>
-                            <label for="firstName" class="label" id="firstNameLabel">First Name</label>
-                            <input class="textIn" type="text" id="firstName" name="firstName" required>
-                        </span>
-                        <!-- <span></span> -->
+                        <label for="firstName" class="label" id="firstNameLabel">First Name *</label>
+                        <input class="textIn" type="text" id="firstName" name="firstName" 
+                            title="Enter first name (required)" minlength="2" required> 
+                        <span class="checkmark"></span>                 
                     </div>
                     <div class="inputDiv">
-                        <label for="lastName" class="label" id="lastNameLabel">Last Name</label>
-                        <input class="textIn" type="text" id="lastName" name="lastName" required>
-                        <span></span>
+                        <label for="lastName" class="label" id="lastNameLabel">Last Name *</label>
+                        <input class="textIn" type="text" id="lastName" name="lastName" 
+                            title="Enter last name (required)" minlength="2" 
+                            required>
+                        <span class="checkmark"></span>
                     </div>
                     <div class="inputDiv">
-                        <label for="email" class="label" id="emailLabel">Email</label>
-                        <input class="textIn" type="email" id="emal" name="email" required>
-                        <span></span>
+                        <label for="email" class="label" id="emailLabel">Email *</label>
+                        <input class="textIn" type="email" id="email" name="email" 
+                            title="Enter email address (required)"
+                            pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{1,}([.][a-zA-Z]{1,}|[.][\w-]{2,}[.][a-zA-Z]{1,})$" 
+                            required>
+                        <span class="checkmark"></span>
                     </div>
                     <div class="inputDiv">
                         <label for="tel" class="label" id="telLabel">Phone Number</label>
-                        <input class="textIn" type="tel" id="tel" name="tel">
-                        <span></span>
+                        <input class="textIn" type="tel" id="tel" name="tel" 
+                            title="Enter phone number (optional)">
+                        <span class="checkmark"></span>
                     </div>
                     <div class="inputDiv">
-                        <label for="password" class="label" id="passwordLabel">Password</label>
-                        <input class="textIn" type="password" id="password" name="password" required>
-                        <span></span>
+                        <label for="password" class="label" id="passwordLabel">Password *</label>
+                        <input class="textIn" type="password" id="password" name="password" 
+                            title="Enter password (required). 
+                            Minumum 8 characters. Must include at least one of each of the following:
+                            -uppercase
+                            -lowercase
+                            -number
+                            -special character." 
+                            minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                            required>
+                        <span class="checkmark"></span>
                     </div>
                     <div class="inputDiv">
-                        <label for="passwordConfirm" class="label" id="passwordConfirm">Confirm Password</label>
-                        <input class="textIn" type="passsword" id="passwordConfirm" name="passwordConfirm" required>
-                        <span></span>
+                        <label for="passwordConfirm" class="label" id="passwordConfirmLabel">Confirm Password *</label>
+                        <input class="textIn" type="password" id="passwordConfirm" name="passwordConfirm" 
+                            title="Re-enter password (required)" 
+                            minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                            required>
+                        <span class="checkmark"></span> 
                     </div>
                 </div>
                 <div class="submitDiv" id="submitDiv">
-                    <button class="submit" type="submit">Create Account</button>
+                    <button class="submit" type="submit" title="Submit" id="submit" method="post" disabled>Create Account</button>
                 </div>
                 <p>Already have an account? <a href="index.html">Log In</a></p>
             </form>
