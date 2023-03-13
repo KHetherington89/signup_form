@@ -14,14 +14,17 @@ passwordConfirm.addEventListener("input", ()=> passCheck());
 password.addEventListener("input", ()=> passCheck());
 
 function passCheck(){
-    if(passwordConfirm.value != password.value){
+    if((passwordConfirm.value != password.value)){
         sideMessageText.innerText = "Your passwords do not match!"
         passwordConfirm.setCustomValidity("Your passwords do not match!")
     } 
     else{
-        sideMessage.textContent = "";
+        sideMessageText.innerText = "";
         passwordConfirm.setCustomValidity("")
     }
+    console.log(password.value);
+    console.log(passwordConfirm.value);
+    console.log(password.value === passwordConfirm.value);
 }
 
 reqArray.forEach(input => {

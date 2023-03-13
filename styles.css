@@ -21,7 +21,7 @@ h1{
     background-position: center;
     background-size: cover;
     display: flex;
-    flex: 1 1 40%;
+    flex: 1 1 60%;
     min-height: 100vh;
     min-width: 220px;
     z-index: 1;
@@ -88,7 +88,7 @@ a{
 
 .mainBlock{
     display: flex;
-    flex: 1 1 60%;
+    flex: 1 1 40%;
     flex-direction: column;
     justify-content: center;
     min-width: 600px;
